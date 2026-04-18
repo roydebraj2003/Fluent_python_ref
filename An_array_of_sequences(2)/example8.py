@@ -15,6 +15,9 @@ metro_areas = [
 ]
 
 # To print Name, lat and long at western hemisphere - longitude <= 0
+""" On the other hand, if we want to match any subject sequence starting with a str, and
+ending with a nested sequence of two floats, we can write:
+case [str(name), *_, (float(lat), float(lon))]: """
 
 def main():
     print(f'{"":15} | {"latitude":>9} | {"longitude":>9}')
